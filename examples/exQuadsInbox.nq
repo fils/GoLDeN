@@ -1,0 +1,33 @@
+These triples need to be set for each inbox we agree to expose...
+Any POST request will check to see if we are willing to instantiate an inbox for the resource
+
+<http://opencoredata.org/id/ldn/inbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://opencoredata.org/id/ldn/inbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://opencoredata.org/id/ldn/inbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ldp#BasicContainer> .
+<http://opencoredata.org/id/ldn/inbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ldp#Container> .
+<http://opencoredata.org/id/ldn/inbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ldp#RDFSource> .
+<http://opencoredata.org/id/ldn/inbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ldp#Resource> .
+<http://opencoredata.org/id/ldn/inbox> <http://www.w3.org/2000/01/rdf-schema#comment> "Open Core Data Linked Data Notifications server"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://opencoredata.org/id/ldn/inbox> <http://www.w3.org/2000/01/rdf-schema#label> "OCD Linked Data Notifications Inbox Graph"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://opencoredata.org/id/ldn/inbox> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://github.com/opencoredata"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://opencoredata.org/id/ldn/inbox> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://linkedresearch.org/ldn/"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+
+These triples need only to exist once, but easier to write them each time?
+<http://www.w3.org/ns/ldp#BasicContainer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ldp#Container> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ldp#RDFSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ldp#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+
+
+A triple like this is made for each new notification
+<http://opencoredata.org/id/ldn/inbox> <http://www.w3.org/ns/ldp#contains> <http://opencoredata.org/id/ldn/inbox/12d10c93e25e4a39a0fa7496c413d842> .
+
+The POST function needs to
+
+1) check if an inbox URI is valid to post to
+2) If it is, make the inbox with the first two sets of triples  (call a makeInbox function)
+3) The upload the posted RDF  which needs a unique graph?  (what if we get quads to being with?) ...   would I honor someone elses quad?
+or would I just remove it and replace it with mine?   What if I get a data graph that needs it's quad IRI?   What would that be?
+4) Then add the last triple with the pointer to dereferencable URI for the new notification resource. 
+
+

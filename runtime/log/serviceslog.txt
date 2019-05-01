@@ -1,0 +1,170 @@
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-07T20:11:54-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-07T20:16:06-06:00"}
+{"SPARQL":"prefix schema: \u003chttp://schema.org/\u003e prefix bds: \u003chttp://www.bigdata.com/rdf/search#\u003e select * where { ?s ?p ?o. } LIMIT 10 ","level":"info","msg":"A SPARQL call","time":"2019-02-07T20:16:10-06:00"}
+{"level":"info","msg":"[]","time":"2019-02-07T20:16:10-06:00"}
+{"SPARQL":"prefix schema: \u003chttp://schema.org/\u003e prefix bds: \u003chttp://www.bigdata.com/rdf/search#\u003e select * where { ?s ?p ?o. } LIMIT 10 ","level":"info","msg":"A SPARQL call","time":"2019-02-07T20:19:11-06:00"}
+{"level":"info","msg":"[]","time":"2019-02-07T20:19:11-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-07T20:21:52-06:00"}
+{"SPARQL":"prefix schema: \u003chttp://schema.org/\u003e prefix bds: \u003chttp://www.bigdata.com/rdf/search#\u003e select * where { { ?s ?p ?o } UNION { GRAPH ?g { ?s ?p ?o } } } LIMIT 10 ","level":"info","msg":"A SPARQL call","time":"2019-02-07T20:21:55-06:00"}
+{"level":"info","msg":"[map[g:{uri http://opencoredata.org/objectgraph/id/5c8bc6326b96ed7d12d80ea997feba2ac86788f391316c4f8ac1a2345dab17b9  } s:{uri http://opencoredata.org/id/do/bhdn6riu6s734ld7q5qg  } p:{uri http://opencoredata.org/voc/csdco/v1/FileName  } o:{literal NAPALM_XYZ.csv  }] map[g:{uri http://opencoredata.org/objectgraph/id/5c8bc6326b96ed7d12d80ea997feba2ac86788f391316c4f8ac1a2345dab17b9  } s:{uri http://opencoredata.org/id/do/bhdn6riu6s734ld7q5qg  } p:{uri http://opencoredata.org/voc/csdco/v1/Project  } o:{literal NAPALM (Walker)  }] map[s:{uri http://opencoredata.org/id/do/bhdn6riu6s734ld7q5qg  } p:{uri http://opencoredata.org/voc/csdco/v1/FileExt  } o:{literal .csv  } g:{uri http://opencoredata.org/objectgraph/id/5c8bc6326b96ed7d12d80ea997feba2ac86788f391316c4f8ac1a2345dab17b9  }] map[p:{uri http://opencoredata.org/voc/csdco/v1/Type  } o:{literal GEOTEK HiRez  } g:{uri http://opencoredata.org/objectgraph/id/5c8bc6326b96ed7d12d80ea997feba2ac86788f391316c4f8ac1a2345dab17b9  } s:{uri http://opencoredata.org/id/do/bhdn6riu6s734ld7q5qg  }] map[s:{uri http://opencoredata.org/id/do/bhdn6riu6s734ld7q5qg  } p:{uri http://opencoredata.org/voc/csdco/v1/Mime  } o:{literal text/csv; charset=utf-8  } g:{uri http://opencoredata.org/objectgraph/id/5c8bc6326b96ed7d12d80ea997feba2ac86788f391316c4f8ac1a2345dab17b9  }] map[s:{uri http://opencoredata.org/id/do/bhdn6riu6s734ld7q5qg  } p:{uri http://opencoredata.org/voc/csdco/v1/SHAHash  } o:{literal 5c8bc6326b96ed7d12d80ea997feba2ac86788f391316c4f8ac1a2345dab17b9  } g:{uri http://opencoredata.org/objectgraph/id/5c8bc6326b96ed7d12d80ea997feba2ac86788f391316c4f8ac1a2345dab17b9  }] map[s:{uri http://opencoredata.org/id/do/bhdn6rqu6s734ld7q5rg  } p:{uri http://opencoredata.org/voc/csdco/v1/FileName  } o:{literal NAPALM_XYZ_20140115_part1.csv  } g:{uri http://opencoredata.org/objectgraph/id/d7fbf2c50c0b88011da74288b4bee9cf7c2e3c1222ecb0bdd7b866627442f5e7  }] map[s:{uri http://opencoredata.org/id/do/bhdn6rqu6s734ld7q5rg  } p:{uri http://opencoredata.org/voc/csdco/v1/Project  } o:{literal NAPALM (Walker)  } g:{uri http://opencoredata.org/objectgraph/id/d7fbf2c50c0b88011da74288b4bee9cf7c2e3c1222ecb0bdd7b866627442f5e7  }] map[s:{uri http://opencoredata.org/id/do/bhdn6rqu6s734ld7q5rg  } p:{uri http://opencoredata.org/voc/csdco/v1/FileExt  } o:{literal .csv  } g:{uri http://opencoredata.org/objectgraph/id/d7fbf2c50c0b88011da74288b4bee9cf7c2e3c1222ecb0bdd7b866627442f5e7  }] map[o:{literal GEOTEK HiRez  } g:{uri http://opencoredata.org/objectgraph/id/d7fbf2c50c0b88011da74288b4bee9cf7c2e3c1222ecb0bdd7b866627442f5e7  } s:{uri http://opencoredata.org/id/do/bhdn6rqu6s734ld7q5rg  } p:{uri http://opencoredata.org/voc/csdco/v1/Type  }]]","time":"2019-02-07T20:21:55-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-07T20:29:59-06:00"}
+{"SPARQL":"prefix schema: \u003chttp://schema.org/\u003e prefix bds: \u003chttp://www.bigdata.com/rdf/search#\u003e select * where { { ?s ?p ?o } UNION { GRAPH ?g { ?s ?p ?o } } } LIMIT 10 ","level":"info","msg":"A SPARQL call","time":"2019-02-07T20:30:02-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-07T20:31:24-06:00"}
+{"SPARQL":"prefix schema: \u003chttp://schema.org/\u003e prefix bds: \u003chttp://www.bigdata.com/rdf/search#\u003e select * where { { ?s ?p ?o } UNION { GRAPH ?g { ?s ?p ?o } } } LIMIT 10 ","level":"info","msg":"A SPARQL call","time":"2019-02-07T20:31:28-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-07T20:51:14-06:00"}
+{"SPARQL":"prefix schema: \u003chttp://schema.org/\u003e prefix bds: \u003chttp://www.bigdata.com/rdf/search#\u003e select * where { { ?s ?p ?o } UNION { GRAPH ?g { ?s ?p ?o } } } LIMIT 10 ","level":"info","msg":"A SPARQL call","time":"2019-02-07T20:51:18-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-07T20:53:21-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-07T20:54:17-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-07T20:54:57-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-07T20:55:52-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-07T20:56:36-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-07T21:06:49-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-07T21:09:45-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-07T21:23:38-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-07T21:33:44-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-07T21:37:18-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-07T21:39:15-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-07T22:17:30-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-07T22:20:05-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-07T22:20:52-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-07T22:21:39-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-07T22:27:38-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-07T22:53:27-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T04:53:24-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T04:58:43-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T05:00:01-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T05:01:29-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T05:02:33-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T05:08:33-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T05:10:03-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T05:14:58-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T05:26:15-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T05:44:28-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T05:50:07-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T10:03:43-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T10:04:04-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T10:05:08-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T10:06:07-06:00"}
+{"level":"info","msg":"[map[s:{uri http://example/book1  } b:{literal true  http://www.w3.org/2001/XMLSchema#boolean}]]","time":"2019-02-08T10:06:07-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T10:07:48-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T10:07:50-06:00"}
+{"level":"info","msg":"true","time":"2019-02-08T10:07:50-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T10:12:02-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T10:12:08-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T10:12:19-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T10:28:09-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T10:32:17-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T10:33:06-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T10:33:13-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T10:34:57-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T10:35:05-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T10:58:50-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T10:58:53-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T10:58:56-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T10:59:37-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T10:59:43-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:01:01-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T11:01:57-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:01:59-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T11:02:38-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:02:41-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T11:04:23-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:04:25-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T11:09:01-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:09:04-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:09:11-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:15:32-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:15:50-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T11:22:36-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:22:42-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:23:11-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T11:24:11-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:24:15-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:24:32-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:28:42-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T11:28:49-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:28:51-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:29:20-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:31:19-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:31:34-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:31:48-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:33:35-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:33:52-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:35:43-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-08T11:47:24-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:47:28-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:48:03-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:49:03-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:50:06-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:50:53-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:51:46-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-08T11:55:09-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-10T14:45:00-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T14:45:30-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-10T14:48:56-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T14:49:03-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-10T14:49:38-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T14:49:47-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T14:54:25-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T14:54:38-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-10T15:15:13-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T15:16:29-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T15:16:42-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-10T15:17:40-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T15:18:05-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T15:18:31-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T15:18:47-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T15:22:59-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-10T15:26:47-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T15:26:58-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-10T15:27:21-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T15:27:22-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T15:27:50-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T15:28:08-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T15:28:38-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T15:30:23-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T15:31:37-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T15:31:41-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T15:32:05-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T15:32:19-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T15:32:25-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T15:32:42-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-10T15:37:44-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T15:37:49-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T15:38:06-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-10T15:39:29-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T15:39:45-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-10T20:42:53-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T20:43:00-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T20:43:03-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-10T20:45:14-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T20:45:55-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T20:47:15-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-10T20:50:34-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T20:50:51-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T20:51:29-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-10T20:51:53-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T20:52:04-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-10T20:53:12-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T20:53:25-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T20:55:03-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T20:55:32-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T20:56:11-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T20:59:41-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T21:01:04-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-10T21:02:08-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T21:02:21-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T21:03:45-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T21:03:50-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T21:03:56-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T21:05:23-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-10T21:09:09-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T21:10:02-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-10T21:11:58-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T21:12:07-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T21:12:25-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T21:12:31-06:00"}
+{"level":"info","msg":"Services on localhost:6789","time":"2019-02-10T21:14:11-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T21:14:19-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T21:14:31-06:00"}
+{"SPARQL":"SELECT ?s (EXISTS{?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o} AS ?b) { ?s \u003chttp://purl.org/dc/elements/1.1/title\u003e ?o . } ","level":"info","msg":"A SPARQL call","time":"2019-02-10T21:14:31-06:00"}

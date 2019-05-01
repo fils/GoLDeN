@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://opencoredata.org/id/ldn/inbox>
+    a <http://www.w3.org/2002/07/owl#NamedIndividual>, <http://www.w3.org/2002/07/owl#Ontology>, <http://www.w3.org/ns/ldp#BasicContainer>, <http://www.w3.org/ns/ldp#Container>, <http://www.w3.org/ns/ldp#RDFSource>, <http://www.w3.org/ns/ldp#Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Open Core Data Linked Data Notifications server"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "OCD Linked Data Notifications Inbox Graph"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://github.com/opencoredata"^^<http://www.w3.org/2000/01/rdf-schema#Literal>, "https://linkedresearch.org/ldn/"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+    <http://www.w3.org/ns/ldp#contains> <http://opencoredata.org/id/ldn/inbox/12d10c93e25e4a39a0fa7496c413d842>, <http://opencoredata.org/id/ldn/inbox/29b29cdaeaea486eb3aa7267981429e2>, <http://opencoredata.org/id/ldn/inbox/f4a24af13e754884938c8f1ddae0468a> .
+
+<http://www.w3.org/ns/ldp#BasicContainer>
+    a <http://www.w3.org/2002/07/owl#Class> .
+
+<http://www.w3.org/ns/ldp#Container>
+    a <http://www.w3.org/2002/07/owl#Class> .
+
+<http://www.w3.org/ns/ldp#RDFSource>
+    a <http://www.w3.org/2002/07/owl#Class> .
+
+<http://www.w3.org/ns/ldp#Resource>
+    a <http://www.w3.org/2002/07/owl#Class> .
+
