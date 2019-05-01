@@ -25,4 +25,14 @@ The goal is to not build huge amounts of triples that then don't ever get used.
 So, I'll attempt to get a document published that details out how we are approaching this goal and adapting the LDN pattern
 to data sets. 
 
+### Refs
 
+* https://www.w3.org/TR/ldn/
+* https://www.rd-alliance.org/group/data-fabric-ig.html
+* https://rd-alliance.org/group/data-fabric-ig/wiki/global-digital-object-cloud
+* https://www.rd-alliance.org/group/gede-group-european-data-experts-rda/wiki/gede-digital-object-topic-group 
+* https://www.rd-alliance.org/group/data-foundation-and-terminology-wg/post/community-discussion-definition-digital-object.html
+
+### Receiver test results
+
+![Validation results](./docs/images/ldnreviewresults.png "results")
