@@ -6,10 +6,11 @@ import (
 	"log"
 	"net/http"
 
-	"../utils"
+	"github.com/fils/GoLDeN/internal/utils"
 	"github.com/gorilla/mux"
 )
 
+// Postcall posts LDN notificatons to a triplestore
 func Postcall(w http.ResponseWriter, r *http.Request) {
 	params := mux.Vars(r)
 	fmt.Println(params)
@@ -30,23 +31,23 @@ func Postcall(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// TODO
-	// The ID of this URL needs to be resolved
-	// use a sha hash?  It would be a big URL
-	// would work though....
+	// Make an XID
+	// make a triple and add to the nq with the notification ID URI
+	// Could also store to object store
 
 	insert := "INSERT DATA {" + nq + "}"
 
 	// Try to insert into Jena
 	_, err = UpdateCall([]byte(insert))
 	if err != nil {
-		log.Printf("Error on updatecall %v \n", err)
+		log.Printf("Error on update call %v \n", err)
 		log.Println(err)
 		//response.WriteHeader(http.StatusUnprocessableEntity)
 		fmt.Fprintf(w, "")
 		return
 	}
 
-	w.Header().Add("Location", "http://c254046f.ngrok.io/id/ldn/1234/inbox/1")
+	w.Header().Add("Location", "http://openknowledge.network/id/ldn/1234/inbox/1")
 	w.WriteHeader(201)
 	fmt.Fprintf(w, "")
 

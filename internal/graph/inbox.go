@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"log"
 
-	"../utils"
+	"github.com/fils/GoLDeN/internal/utils"
 	sparql "github.com/knakk/sparql"
 )
 
@@ -176,6 +176,5 @@ func TestJSON() string {
 	  ]
 
 	`
-
 	return jld
 }

@@ -8,7 +8,7 @@ import (
 )
 
 func LDNDBConn() (*sparql.Repo, error) {
-	repo, err := sparql.NewRepo("http://clear.local:3030/ldn/sparql",
+	repo, err := sparql.NewRepo("http://localhost:3030/ldn/sparql",
 		sparql.Timeout(time.Millisecond*15000),
 	)
 	if err != nil {

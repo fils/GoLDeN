@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"../utils"
+	"github.com/fils/GoLDeN/internal/utils"
 	"github.com/gorilla/mux"
 )
 

@@ -11,7 +11,7 @@ import (
 
 // UpdateCall test out updates to Jena
 func UpdateCall(s []byte) ([]byte, error) {
-	url := "http://clear.local:3030/ldn/update"
+	url := "http://localhost:3030/ldn/update"
 	// fmt.Println("URL:>", url)
 
 	req, err := http.NewRequest("POST", url, bytes.NewBuffer(s))
