@@ -11,11 +11,13 @@ import (
 
 // UpdateCall test out updates to Jena
 func UpdateCall(s []byte) ([]byte, error) {
-	url := "http://localhost:3030/ldn/update"
+	url := "http://localhost:7979/store"
 	// fmt.Println("URL:>", url)
 
 	req, err := http.NewRequest("POST", url, bytes.NewBuffer(s))
-	req.Header.Set("Content-Type", "application/sparql-update")
+	req.Header.Set("Content-Type", "application/n-quads")
+//	req.Header.Set("Content-Type", "application/sparql-update")
+
 
 	fmt.Println(string(s))
 

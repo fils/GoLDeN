@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"../../internal/consumer"
+	"github.com/fils/GoLDeN/internal/consumer"
 )
 
 func main() {

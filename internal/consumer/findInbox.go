@@ -15,6 +15,9 @@ func ReadGetBody(url string) string {
 	}
 	// Look for link then make a map of the comma separated ; based map items
 
-	r.Body.Close()
+	err := r.Body.Close()
+	if err != nil {
+		return "Error Closing Body"
+	}
 	return "URL of inbox"
 }

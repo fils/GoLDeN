@@ -35,9 +35,11 @@ func Postcall(w http.ResponseWriter, r *http.Request) {
 	// make a triple and add to the nq with the notification ID URI
 	// Could also store to object store
 
-	insert := "INSERT DATA {" + nq + "}"
+	//	insert := "INSERT DATA {" + nq + "}"
+	insert := nq   // in this case we are using sparql over http not a sparql update call
 
 	// Try to insert into Jena
+	// TODO, update this to use Oxigraph
 	_, err = UpdateCall([]byte(insert))
 	if err != nil {
 		log.Printf("Error on update call %v \n", err)
@@ -50,5 +52,4 @@ func Postcall(w http.ResponseWriter, r *http.Request) {
 	w.Header().Add("Location", "http://openknowledge.network/id/ldn/1234/inbox/1")
 	w.WriteHeader(201)
 	fmt.Fprintf(w, "")
-
 }
