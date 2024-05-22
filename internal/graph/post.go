@@ -19,8 +19,8 @@ func Postcall(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		log.Printf("Error on body parameter read %v \n", err)
 		log.Println(err)
-		//	response.WriteHeader(http.StatusUnprocessableEntity)
-		fmt.Fprintf(w, "")
+		w.WriteHeader(http.StatusBadRequest)
+		w.Write([]byte("Unprocessable entity"))
 		return
 	}
 
@@ -28,6 +28,9 @@ func Postcall(w http.ResponseWriter, r *http.Request) {
 	nq, err := utils.JSONLDToNQ(string(body))
 	if err != nil {
 		log.Println(err)
+		w.WriteHeader(http.StatusUnprocessableEntity)
+		w.Write([]byte("Unprocessable entity"))
+		return
 	}
 
 	// TODO
@@ -36,7 +39,7 @@ func Postcall(w http.ResponseWriter, r *http.Request) {
 	// Could also store to object store
 
 	//	insert := "INSERT DATA {" + nq + "}"
-	insert := nq   // in this case we are using sparql over http not a sparql update call
+	insert := nq // in this case we are using sparql over http not a sparql update call
 
 	// Try to insert into Jena
 	// TODO, update this to use Oxigraph
@@ -44,12 +47,15 @@ func Postcall(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		log.Printf("Error on update call %v \n", err)
 		log.Println(err)
-		//response.WriteHeader(http.StatusUnprocessableEntity)
-		fmt.Fprintf(w, "")
+		w.WriteHeader(http.StatusInternalServerError)
+		w.Write([]byte("Unprocessable entity"))
 		return
+		//w.Header().Add("Location", "http://openknowledge.network/id/ldn/1234/inbox/1")
+		return
+	} else {
+		w.Header().Add("Location", "http://openknowledge.network/id/ldn/1234/inbox/1")
+		w.WriteHeader(http.StatusCreated)
+		fmt.Fprintf(w, "")
 	}
 
-	w.Header().Add("Location", "http://openknowledge.network/id/ldn/1234/inbox/1")
-	w.WriteHeader(201)
-	fmt.Fprintf(w, "")
 }

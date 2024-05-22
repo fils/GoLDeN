@@ -6,7 +6,7 @@
 FROM scratch
 
 # Add in the static elements (could also mount these from local filesystem)
-ADD ./cmd/golden/golden / 
+ADD ./cmd/reciever/reciever /
 
 # ADD ../web/static  /static   # Replace with -v mounting the /web/static directory
 # static is in the .dockerignore..  so an emptry dir is made unless static is removed
@@ -15,7 +15,7 @@ ADD ./cmd/golden/golden /
 #ADD web/empty_static web/static  
 
 # Add our binary
-CMD ["/golden"]
+CMD ["/reciever"]
 
 # Document that the service listens on this port
 EXPOSE 6789

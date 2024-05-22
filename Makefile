@@ -14,8 +14,13 @@ sender:
 	GOOS=linux GOARCH=amd64 CGO_ENABLED=0 env go build -o sender 
 
 docker:
-	docker build  --tag="fcore/golden:$(DOCKERVER)"  --file=./build/Dockerfile . 
+	podman build  --tag="fcore/golden:$(DOCKERVER)"  --file=./build/Dockerfile .
 
 latest:
-	docker build  --tag="fcore/golden:$(DOCKERVER)"  --file=./build/Dockerfile . ; \
-	docker tag fcore/golden:$(DOCKERVER) fcore/golden:latest
+	podman build  --tag="fcore/golden:$(DOCKERVER)"  --file=./build/Dockerfile . ; \
+	podman tag fcore/golden:$(DOCKERVER) fcore/golden:latest
+
+push:
+	podman push localhost/fcore/golden:$(DOCKERVER) fils/golden:$(DOCKERVER)
+	podman push localhost/fcore/golden:$(DOCKERVER) fils/golden:latest
+

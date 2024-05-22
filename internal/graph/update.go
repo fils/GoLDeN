@@ -5,26 +5,23 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
-
-	log "github.com/sirupsen/logrus"
 )
 
 // UpdateCall test out updates to Jena
 func UpdateCall(s []byte) ([]byte, error) {
-	url := "http://localhost:7979/store"
+	url := "http://localhost:7878/store" // TODO   add to a config file or CLI option.
 	// fmt.Println("URL:>", url)
 
 	req, err := http.NewRequest("POST", url, bytes.NewBuffer(s))
 	req.Header.Set("Content-Type", "application/n-quads")
-//	req.Header.Set("Content-Type", "application/sparql-update")
-
+	//	req.Header.Set("Content-Type", "application/sparql-update")
 
 	fmt.Println(string(s))
 
 	client := &http.Client{}
 	resp, err := client.Do(req)
 	if err != nil {
-		log.Println(err)
+		return nil, err
 	}
 	defer resp.Body.Close()
 
