@@ -9,7 +9,7 @@ import (
 
 // UpdateCall test out updates to Jena
 func UpdateCall(s []byte) ([]byte, error) {
-	url := "http://localhost:7878/store" // TODO   add to a config file or CLI option.
+	url := "http://build_t1_1:7878/store" // TODO   add to a config file or CLI option.
 	// fmt.Println("URL:>", url)
 
 	req, err := http.NewRequest("POST", url, bytes.NewBuffer(s))
@@ -25,10 +25,10 @@ func UpdateCall(s []byte) ([]byte, error) {
 	}
 	defer resp.Body.Close()
 
-	fmt.Println("response Status:", resp.Status)
-	fmt.Println("response Headers:", resp.Header)
+	fmt.Println("UpdateCall response Status:", resp.Status)
+	fmt.Println("UpdateCall response Headers:", resp.Header)
 	body, err := ioutil.ReadAll(resp.Body)
-	fmt.Println("response Body:", string(body))
+	fmt.Println("UpdateCall response Body:", string(body))
 
 	return body, err
 }
