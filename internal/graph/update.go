@@ -9,7 +9,7 @@ import (
 
 // UpdateCall test out updates to Jena
 func UpdateCall(s []byte) ([]byte, error) {
-	url := "http://build_t1_1:7878/store" // TODO   add to a config file or CLI option.
+	url := "http://deployments_t1_1:7878/store" // TODO   add to a config file or CLI option.
 	// fmt.Println("URL:>", url)
 
 	req, err := http.NewRequest("POST", url, bytes.NewBuffer(s))

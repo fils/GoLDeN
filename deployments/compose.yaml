@@ -1,0 +1,16 @@
+---
+version: '3'
+
+services:
+    golden:
+        image: localhost/fcore/golden:latest
+        ports:
+            - 6789:6789
+
+
+    t1:
+        image: oxigraph/oxigraph
+        ports:
+            - 7878:7878
+#        volumes:
+#            - ./data/oxigraph:/data

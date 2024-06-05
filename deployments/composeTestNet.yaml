@@ -6,10 +6,19 @@ services:
         image: localhost/fcore/golden:latest
         ports:
             - 6789:6789
-    
+        networks:
+            - golden
+
+
     t1:
         image: oxigraph/oxigraph
         ports:
             - 7878:7878
+        networks:
+            - golden
 #        volumes:
 #            - ./data/oxigraph:/data
+
+networks:
+    golden:
+        driver: overlay
