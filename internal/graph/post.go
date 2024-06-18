@@ -53,7 +53,8 @@ func Postcall(w http.ResponseWriter, r *http.Request) {
 		//w.Header().Add("Location", "http://openknowledge.network/id/ldn/1234/inbox/1")
 		return
 	} else {
-		w.Header().Add("Location", "http://openknowledge.network/id/ldn/1234/inbox/1")
+		// TODO get named graph value for graph and return that in the URL
+		w.Header().Add("Location", "http://mm.oceaninfohub.org/id/ldn/NAMEDGRAPH/inbox/1")
 		w.WriteHeader(http.StatusCreated)
 		fmt.Fprintf(w, "")
 	}
