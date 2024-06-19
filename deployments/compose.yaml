@@ -1,15 +1,17 @@
 ---
-version: '3'
+version: '3.7'
 
 services:
     golden:
-        image: localhost/fcore/golden:latest
+        image: fils/golden:latest
+        container_name: golden
         ports:
             - 6789:6789
 
 
     t1:
         image: oxigraph/oxigraph
+        container_name: triplestore
         ports:
             - 7878:7878
 #        volumes:

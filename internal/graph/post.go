@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"strconv"
 
 	"github.com/fils/GoLDeN/internal/utils"
 	"github.com/gorilla/mux"
@@ -43,7 +44,7 @@ func Postcall(w http.ResponseWriter, r *http.Request) {
 
 	// Try to insert into Jena
 	// TODO, update this to use Oxigraph
-	_, err = UpdateCall([]byte(insert))
+	_, err = UpdateCall(insert)
 	if err != nil {
 		log.Printf("Error on update call %v \n", err)
 		log.Println(err)
@@ -54,7 +55,9 @@ func Postcall(w http.ResponseWriter, r *http.Request) {
 		return
 	} else {
 		// TODO get named graph value for graph and return that in the URL
-		w.Header().Add("Location", "http://mm.oceaninfohub.org/id/ldn/NAMEDGRAPH/inbox/1")
+		h := hash(insert)
+		hs := strconv.FormatUint(uint64(h), 10)
+		w.Header().Add("Location", fmt.Sprintf("http://mm.oceaninfohub.org/id/ldn/NAMEDGRAPH/inbox/%s", hs))
 		w.WriteHeader(http.StatusCreated)
 		fmt.Fprintf(w, "")
 	}

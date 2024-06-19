@@ -8,8 +8,14 @@ import (
 )
 
 // UpdateCall test out updates to Jena
-func UpdateCall(s []byte) ([]byte, error) {
-	url := "http://deployments_t1_1:7878/store" // TODO   add to a config file or CLI option.
+func UpdateCall(insert string) ([]byte, error) {
+
+	s := []byte(insert)
+
+	host := "triplestore" // match name in compose file
+	port := "7878"
+
+	url := fmt.Sprintf("http://%s:%s/store", host, port) // TODO   add to a config file or CLI option.
 	// fmt.Println("URL:>", url)
 
 	req, err := http.NewRequest("POST", url, bytes.NewBuffer(s))
